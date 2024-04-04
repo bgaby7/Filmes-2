@@ -1,0 +1,34 @@
+UPDATE `ENTRETERIMENTO`
+SET `RANKING` = 
+    CASE 
+        WHEN `NOME` = 'Stranger Things' THEN 22
+        WHEN `NOME` = 'Black Mirror' THEN 25
+        WHEN `NOME` = 'The Irishman' THEN 21
+        WHEN `NOME` = 'Breaking Bad' THEN 29
+        WHEN `NOME` = 'The Crown' THEN 8
+        WHEN `NOME` = 'Inception' THEN 24
+        WHEN `NOME` = 'Friends' THEN 25
+        WHEN `NOME` = 'The Godfather' THEN 14
+        WHEN `NOME` = 'La Casa de Papel' THEN 31
+        WHEN `NOME` = 'Pulp Fiction' THEN 3
+        WHEN `NOME` = 'The Witcher' THEN 30
+        WHEN `NOME` = 'The Matrix' THEN 29
+        WHEN `NOME` = 'Money Heist' THEN 20
+        WHEN `NOME` = 'Forrest Gump' THEN 10
+        WHEN `NOME` = 'Vikings' THEN 26
+        WHEN `NOME` = 'The Dark Knight' THEN 26
+        WHEN `NOME` = 'Grey’s Anatomy' THEN 16
+        WHEN `NOME` = 'The Shawshank Redemption' THEN 2
+        WHEN `NOME` = 'Gladiador' THEN 36
+        WHEN `NOME` = 'O Senhor dos Anéis: A Sociedade do Anel' THEN 25
+        WHEN `NOME` = 'Clube da Luta' THEN 18
+        WHEN `NOME` = 'Cidade de Deus' THEN 14
+        WHEN `NOME` = 'Kill Bill: Volume 1' THEN 17
+        WHEN `NOME` = 'Entrevista com o Vampiro' THEN 2
+        WHEN `NOME` = 'Bastardos Inglórios' THEN 36
+        WHEN `NOME` = 'Sr. e Sra. Smith' THEN 24
+        WHEN `NOME` = 'Tropa de Elite' THEN 10
+        WHEN `NOME` = 'Central do Brasil' THEN 15
+        WHEN `NOME` = 'O Auto da Compadecida' THEN 8
+        ELSE 0
+    END;
