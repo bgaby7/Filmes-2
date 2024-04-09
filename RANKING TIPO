@@ -1,0 +1,7 @@
+UPDATE `ENTRETERIMENTO`
+SET `RANKING_TIPO` = 
+    CASE 
+        WHEN `NOME` IN ('Stranger Things', 'Black Mirror', 'Breaking Bad', 'The Crown', 'Inception', 'Friends', 'The Godfather', 'La Casa de Papel', 'Pulp Fiction', 'The Witcher', 'The Matrix', 'Money Heist', 'Forrest Gump', 'Vikings', 'The Dark Knight', 'Sr. e Sra. Smith') THEN 'SÉRIE'
+        WHEN `NOME` IN ('The Irishman', 'Pulp Fiction', 'The Matrix', 'Forrest Gump', 'The Dark Knight', 'Grey’s Anatomy', 'The Shawshank Redemption', 'Gladiador', 'O Senhor dos Anéis: A Sociedade do Anel', 'Clube da Luta', 'Cidade de Deus', 'Kill Bill: Volume 1', 'Entrevista com o Vampiro', 'Bastardos Inglórios', 'Sr. e Sra. Smith', 'Tropa de Elite', 'Central do Brasil', 'O Auto da Compadecida') THEN 'FILME'
+        ELSE 'Tipo Desconhecido'
+    END;
